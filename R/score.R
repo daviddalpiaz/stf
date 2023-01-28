@@ -55,3 +55,19 @@ prob = function(x, scores, lower = TRUE) {
   }
   return(1 - prob)
 }
+
+#' Create a probability table for scores
+#'
+#' @param scores [numeric] Vector of simulated scores.
+#'
+#' @return A data frame.
+#' @export
+empiricalDistTable = function(scores) {
+  probs = table(scores) / length(scores)
+  result = data.frame(
+    prob = probs,
+    cumProb = cumsum(probs)
+  )
+  names(result) = c("Score", "Probability", "Cumulative Probability")
+  return(result)
+}

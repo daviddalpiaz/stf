@@ -9,12 +9,12 @@ server = function(input, output) {
     simScores(ns = input$ns, nw = input$nw, multi = input$multi)
   })
   probability = shiny::reactive({
-    prob(x = input$cutoff, scores = scores())
+    empiricalDistTable(scores())
   })
   output$plot = shiny::renderPlot({
     plotScores(scores())
   })
-  output$probability = shiny::renderText(probability())
+  output$probTable = shiny::renderTable(probability())
 }
 
 #' Run the STF application
@@ -53,7 +53,7 @@ runSTF = function() {
       # show plot of simulated distribution
       shiny::mainPanel(
         shiny::plotOutput("plot"),
-        shiny::textOutput("probability")
+        shiny::tableOutput("probTable")
       )
     )
   )
