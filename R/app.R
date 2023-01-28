@@ -17,7 +17,6 @@ server = function(input, output) {
   output$probability = shiny::renderText(probability())
 }
 
-
 #' Run the STF application
 #'
 #' @return Does it "return" anything?
