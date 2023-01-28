@@ -8,5 +8,5 @@ plotScores = function(scores) {
   df = data.frame(scores = scores)
   ggplot2::ggplot(data = df) +
     ggplot2::aes(x = scores) +
-    ggplot2::geom_histogram()
+    ggplot2::geom_histogram(binwidth = 1)
 }
