@@ -3,4 +3,5 @@
 export(plotScores)
 export(prob)
 export(roll)
+export(runSTF)
 export(simScores)
