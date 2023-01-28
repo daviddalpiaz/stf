@@ -23,7 +23,7 @@ roll = function(ns, nw, ps = 0.4, pw = 0.2) {
 #' @param nw Number of "weak" dice to roll for each simulation.
 #' @param ps Success probability of "strong" dice. Defaults to `0.4`.
 #' @param pw Success probability of "weak" dice. Defaults to `0.2`.
-#' @param multi Multipler that adjusts each score from each simulation. Defaults to `1`.
+#' @param multi Multiplier that adjusts each score from each simulation. Defaults to `1`.
 #' @param n Number of simulations to perform. (Repeated rolls of `ns` "strong"
 #' dice and `nw` "weak" dice.) Defaults to `10000`.
 #'

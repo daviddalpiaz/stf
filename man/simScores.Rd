@@ -15,7 +15,7 @@ simScores(ns, nw, ps = 0.4, pw = 0.2, multi = 1, n = 10000)
 
 \item{pw}{Success probability of "weak" dice. Defaults to \code{0.2}.}
 
-\item{multi}{Multipler that adjusts each score from each simulation. Defaults to \code{1}.}
+\item{multi}{Multiplier that adjusts each score from each simulation. Defaults to \code{1}.}
 
 \item{n}{Number of simulations to perform. (Repeated rolls of \code{ns} "strong"
 dice and \code{nw} "weak" dice.) Defaults to \code{10000}.}
