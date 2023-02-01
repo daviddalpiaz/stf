@@ -12,3 +12,5 @@ Imports:
     ggplot2,
     shiny,
     stats
+Suggests:
+    tinytest
