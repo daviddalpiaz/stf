@@ -1,6 +1,6 @@
 Package: stf
 Title: Star Traders: Frontiers
-Version: 0.0.0.9000
+Version: 0.0.0.99
 Authors@R: 
     person("David", "Dalpiaz", , "dalpiaz2@illinois.edu", role = c("aut", "cre"))
 Description: Helpers for calculating probabilities related to Star Traders: Frontiers.
